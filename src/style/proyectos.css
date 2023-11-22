@@ -1,0 +1,40 @@
+
+
+/* .carousel-item {
+    border: 2px solid red;
+    margin-bottom: 10rem;
+    font-size: 2rem;
+} */
+.section-proy {
+    margin-top: 10px;
+}
+
+.container .one {
+  height: 100vh;
+}
+
+.container h2 {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    margin-top: 5rem ;
+    margin-bottom: 6rem;
+    font-size: 3.5rem;    
+}
+
+.card {
+    width: auto;
+    background-color: black;
+}
+
+.card-body .card-title {
+    background-color: black;
+    color: aliceblue;
+    font-size: 2rem;
+}
+  
+.card-text {
+    color: aliceblue;
+    font-size: 1.4rem;
+}
+

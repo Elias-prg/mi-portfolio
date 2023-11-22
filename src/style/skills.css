@@ -1,0 +1,54 @@
+.section-skills {
+ margin-bottom : 8rem ;
+}
+
+.title-skills {
+   display: block;
+   justify-content: center;
+   text-align: center;
+   font-size: 5rem;
+   margin: 5% ;
+}
+
+.title-skills span {
+   color: var(--main-color);
+}
+
+.container  {
+justify-content: space-between;
+}
+
+.container .col {
+   font-size: 5rem;
+   position: relative;
+ }
+
+.container-skills {
+   border : 2.5px solid var(--main-color);
+   content: '';
+}
+  
+/* .col .angular {                     (  buscar cual es el error que sobrescribe  ) 
+  overflow: hidden;
+} 
+
+.col .angular::before {
+   content: '';
+   position: absolute !important;
+   top: 0;
+   left: 0;
+   width: 0;
+   height: 100%;
+   background: rgb(170, 31, 31);
+   z-index: -1;
+   transition: .5s;
+}
+
+.col .angular:hover:before {
+   width: 100%;
+} 
+*/
+
+
+
+
