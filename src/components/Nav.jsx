@@ -1,11 +1,9 @@
-import  { useState } from 'react';
+import { useState } from 'react';
 import '/src/style/nav.css';
 import { Lenguage } from './Lenguage';
+import { Link } from 'react-router-dom';
 
 const Nav = () => {
-
-
-  
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -13,28 +11,33 @@ const Nav = () => {
   };
 
   return (
-    // <StyledComponent>
-      <header className="header">
-        <a href="#" className="logo">
-          Elias
-        </a>
-
-        <div className="bx bx-menu" id="menu-icon" onClick={toggleMenu}></div>
-
-        <nav className={`navbar ${isOpen ? 'open' : ''}`}>
-          {/* <button onClick={toggleTheme}>Cambiar tema</button>         ver porque sigue sin andar                 */}
-          <a href="#home" className="active">
-            Home
-          </a>
-          <a href="#projects">Projects</a>
-          <a href="#skills">Skills</a>
-          <a href="#education">Education</a>
-          <Lenguage />
-          {/* <a href="#contact">Contact</a> */}
-        </nav>
-      </header>
-    // </StyledComponent> 
+    <nav>
+      <div className="logo">
+        <Link to="/">Logo</Link>
+      </div>
+      <ul className={isOpen ? 'nav-links nav-active' : 'nav-links'}>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/projects">Projects</Link>
+        </li>
+        <li>
+          <Link to="/skills">Skills</Link>
+        </li>
+        <li>
+          <Link to="/education">Education</Link>
+        </li>
+      </ul>
+      <div className="burger" onClick={toggleMenu}>
+        <div className="line1"></div>
+        <div className="line2"></div>
+        <div className="line3"></div>
+      </div>
+      <Lenguage />
+    </nav>
   );
 };
 
 export default Nav;
+
