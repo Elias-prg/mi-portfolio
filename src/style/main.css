@@ -22,10 +22,18 @@
 
 :root {
    --bg-color: #000000;
+   --second-bg-color : #3e6a4b;
+   --text-color: #ededed;
+   --main-color : #33ff00;
+}
+
+/* :root {
+   --bg-color: #000000;
    --second-bg-color : #3e4d6a;
    --text-color: #ededed;
    --main-color : #Ffff00;
 }
+ */
 
 /* :root {
    --bg-color: #081b29;

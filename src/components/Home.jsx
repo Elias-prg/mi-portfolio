@@ -1,20 +1,23 @@
 import '/src/style/home.css' ;
 
 import { useTranslation } from 'react-i18next';
+import YouTube from 'react-youtube';
 
 
 
 export const Home = () => {
   const { t } = useTranslation();
+  const videoPrueba = 'SeOdffs9T6w' ; 
 
   return (
+      <>
     <section className="home" id="home" >
      
      
       <div className="home-content">
-        <h1>{t('Hi i\'m')} <span>{t('Elias Pilon')}</span></h1>
+        <h1>{t('Hi i\'m')} <span>{t('Pollito')}</span></h1>
         <div className="text-animated">
-          <h3>{t('Full Stack Developer')}</h3>
+          <h3>{t('Coach about sex in Fornite')}</h3>
         </div>
         <p>{t('Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe cum omnis dolore mque animi commodi sapiente, sed officiis porro beatae iusto dolorem pariatur dicta obcaecati, nisi facere ex!')}</p>
         <div className="btn-box">
@@ -33,5 +36,12 @@ export const Home = () => {
         <img id="img"   /> {/* <img id="img" src="/src/assets/home.jpg" alt={t('blabla')} /> */}
       </div>
     </section>
+    {/* <section className='d-flex'>
+     <YouTube className="p-2 flex-grow-1" videoId={videoPrueba} />
+     <div className='p-9 '> 
+      Chachin purrum blablalbalbal 
+     </div>
+    </section> */}
+    </>
   )
 }

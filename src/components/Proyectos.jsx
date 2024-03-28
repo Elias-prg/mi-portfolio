@@ -2,7 +2,9 @@ import '/src/style/proyectos.css';
 
 
 
+
 export const Proyectos = () => {
+  
   return (
     <>
      <section className='section-proy' id="projects">
@@ -35,7 +37,7 @@ export const Proyectos = () => {
         </div>
       </div>
     </section>
-
+ 
     </> 
   );
 };
